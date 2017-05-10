@@ -1,10 +1,15 @@
 //Imported files that are stored in their respective variables.
-var express = require('express');
-var routes = require('./routes.js')
-var bodyParser = require('body-parser');
+var express     = require('express');
+var routes      = require('./routes.js')
+var bodyParser  = require('body-parser');
+var mongoose    = require('mongoose');
 
 //Main variable that calls in the express function.
-var app = new express();
+var app         = new express();
+
+//Connecting to mLab
+var mongoURL = 'mongodb://joyousfun:noobies1@ds129281.mlab.com:29281/kld'
+mongoose.connect(mongoURL);
 
 //Middlewear that translates info json
 app.use(bodyParser.json());

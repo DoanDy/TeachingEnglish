@@ -7,19 +7,7 @@ var Class = require('../models/class.js');
 
 //The Info
     app.get('/', function(req, res) {
-        res.send([
-          '/home', '/about', '/user'
-        ]);
-    });
-
-//The Homepage
-    app.get('/home', function(req, res) {
-        res.send('hello');
-    });
-
-//The About me page
-    app.get('/about', function(req, res) {
-        res.send("just do you")
+        res.send([ '/user', '/api/students', 'classes' ]);
     });
 
 //The User page
@@ -32,16 +20,25 @@ var Class = require('../models/class.js');
         res.send(req.params.userID);
     });
 
-//Testing the post method here.
-    app.post('/api/user', function (req, res) {
-      console.log(req.body)
-      var user = {
-        name: req.body.name,
-        age: req.body.age
-      }
+//Testing Student Schema
+    app.post('/api/students', function (req, res) {
+        var student = new Student();
+        student.name = req.body.name;
+        student.age = req.body.age;
+        student.contact = req.body.contact;
+        student.save();
+        res.send(student._id);
+    })
 
-      //code to save user to the db
-      res.send(req.body);
+//Testing Class Schema
+    app.post('/api/classes', function (req, res) {
+        var englishClass = new Class();
+        englishClass.name = req.body.name;
+        englishClass.gradeLevel = req.body.age;
+        englishClass.time = req.body.contact;
+        englishClass.price = req.body.price;
+        englishClass.save();
+        res.send(englishClass._id);
     })
 
 //This part is the end of the function.
