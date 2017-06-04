@@ -1,0 +1,22 @@
+#main-nav {
+  min-height: 76px;
+  line-height: 76px;
+  padding: 0px;
+  border-width: 0px;
+  .container {
+    min-height: 76px;
+    .navbar-header {
+      .navbar-brand {
+        min-height: 76px;
+        padding: 5px;
+        #logo {
+          height: 76px;
+        }
+      }
+      h3 {
+        line-height: 76px;
+        margin: 0px;
+      }
+    }
+  }
+}

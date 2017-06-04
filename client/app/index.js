@@ -1,16 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
-import {FormattedMessage} from 'react-intl'
 import LocaleProvider from './localeProvider.js'
+import App from './components/app.js'
 
-class App extends React.Component {
-  render() {
-    return (
-      <h2><FormattedMessage id={ 'test' }/></h2>
-    )
-  }
-}
-// test test test
+import style from './stylesheets/main.scss'
+
 ReactDOM.render(
   <LocaleProvider>
     <App/>
