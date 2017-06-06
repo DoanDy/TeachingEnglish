@@ -1,21 +1,38 @@
+$navbar-height: 64px;
+
 #main-nav {
-  min-height: 76px;
-  line-height: 76px;
+  min-height: $navbar-height;
+  line-height: $navbar-height;
   padding: 0px;
   border-width: 0px;
+  background-color: #ffecb3;
   .container {
-    min-height: 76px;
+    min-height: $navbar-height;
     .navbar-header {
       .navbar-brand {
-        min-height: 76px;
-        padding: 5px;
+        min-height: $navbar-height;
+        padding: 7px;
         #logo {
-          height: 76px;
+          height: 100%;;
         }
       }
-      h3 {
-        line-height: 76px;
+      h4 {
+        line-height: $navbar-height;
         margin: 0px;
+        color: #000;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+    .navbar-nav {
+      min-height: $navbar-height;
+      li {
+        min-height: $navbar-height;
+        a {
+          line-height: $navbar-height;
+          padding-top: 0px;
+          padding-bottom: 0px;
+        }
       }
     }
   }

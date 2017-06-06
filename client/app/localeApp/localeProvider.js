@@ -17,8 +17,6 @@ const locale = navigator.userLanguage || navigator.language
 const localeWithoutRegionCode = locale.toLowerCase().split(/[_-]+/)[0]
 const strings = localeData[localeWithoutRegionCode] || localeData[locale] || localeData.en
 
-console.log(strings)
-
 export default class LocaleProvider extends React.Component {
   render() {
     return (
