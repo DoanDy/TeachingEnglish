@@ -7,14 +7,34 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Hamu Learning</title>
     <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
     <!-- Roboto Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/css/flag-icon.min.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="./css/aos.css" rel="stylesheet">
   </head>
   <body>
-    <div id="app"></div>
+    <!-- Initial loading component -->
+    <div id="main-loading-overlay">
+      <div class="absolute-center text-center">
+        <object id="main-loading-animation" type="image/svg+xml" data="./svg/paw.svg">
+        </object>
+        <br />
+        <h4 id="main-loading-text">LOADING</h4>
+      </div>
+    </div>
+    <!-- React App -->
+    <div id="app">
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="/js/jquery.lettering.js"></script>
+    <script src="/js/jquery.textillate.js"></script>
     <script src="/js/index.js"></script>
+    <script src="./js/aos.js"></script>
+    <script>AOS.init()</script>
   </body>
 </html>

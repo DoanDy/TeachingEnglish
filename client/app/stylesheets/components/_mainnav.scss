@@ -1,3 +1,5 @@
+@import '../util/transitions.scss';
+@import '../util/variables.scss';
 $navbar-height: 64px;
 
 #main-nav {
@@ -5,15 +7,42 @@ $navbar-height: 64px;
   line-height: $navbar-height;
   padding: 0px;
   border-width: 0px;
-  background-color: #ffecb3;
+  background-color: $color-tan;
+  margin-bottom: 0px;
   .container {
     min-height: $navbar-height;
     .navbar-header {
       .navbar-brand {
+        cursor: pointer;
         min-height: $navbar-height;
-        padding: 7px;
+        padding: 0px;
         #logo {
+          padding: 7px;
           height: 100%;;
+          transition: transform 0.3s ease-in-out;
+        }
+        &:hover {
+          #logo {
+            transform: rotate(4deg)
+          }
+        }
+      }
+      .navbar-toggle {
+        margin-top: 12px;
+        line-height: 18px;
+        border: none;
+        #toggle-logo {
+          height: 18px;
+          transition: transform 0.3s ease-in-out;
+        }
+        &:hover {
+          #toggle-logo {
+            transform: rotate(8deg)
+          }
+          background: lighten($color-tan, 3%);
+        }
+        &:focus {
+          background: darken($color-tan, 3%);
         }
       }
       h4 {
@@ -32,6 +61,24 @@ $navbar-height: 64px;
           line-height: $navbar-height;
           padding-top: 0px;
           padding-bottom: 0px;
+        }
+      }
+      li.dropdown {
+        .dropdown-toggle {
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            background: lighten($color-tan, 3%);
+            color: #AA6C39;
+          }
+        }
+        &.open {
+          .dropdown-toggle {
+            background: darken($color-tan, 3%);
+            color: #AA6C39;
+          }
+          ul.dropdown-menu {
+            @extend .transitionExpandHeight;
+          }
         }
       }
     }

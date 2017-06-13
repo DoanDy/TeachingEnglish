@@ -1,0 +1,27 @@
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: inline-block;
+}
+
+#main-loading-overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffe6;
+}
+
+#main-loading-animation {
+  height: 30vh;
+}
+
+#main-loading-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #E6D39A;
+}

@@ -1,3 +1,22 @@
 {
-  "navbar.courses": "Courses"
+  "navbar.courses": "Khoá Học",
+  "navbar.courses.english": "Tiếng Anh",
+  "navbar.aboutus": "Giới Thiệu",
+  "navbar.aboutus.contact": "Liên hệ",
+  "navbar.aboutus.staff": "Cán Bộ",
+  "homepage.jumbo-1.title": "Học Cách Hoàn Thành",
+  "homepage.jumbo-1.btn1": "Tìm Hiểu Thêm",
+  "homepage.jumbo-1.btn2": "Tham Gia Với Chúng Tôi",
+  "homepage.jumbo-2.title": "Giá Cạnh Tranh",
+  "homepage.jumbo-2.subtitle": "1.5 giờ một ngày và 3 ngày một tuần.",
+  "homepage.jumbo-2.startingAt": "Bắt đầu tại",
+  "homepage.jumbo-2.perMonth": "mỗi Tháng",
+  "homepage.jumbo-2.private": "Riêng Tư",
+  "homepage.jumbo-2.private.desc": "Tìm hiểu những gì bạn muốn ở tốc độ bạn muốn.",
+  "homepage.jumbo-2.group": "Nhóm",
+  "homepage.jumbo-2.group.desc": "Học giữa các đồng nghiệp.",
+  "homepage.jumbo-3.title": "Thành công được xác định bởi bạn",
+  "homepage.jumbo-3.desc": "Bạn đang tìm kiếm để đi du lịch ra nước ngoài hoặc là bạn đang học bulster kinh doanh của bạn? Chúng tôi sẽ giúp bạn thiết lập một con đường và chương trình giảng dạy sẽ giúp bạn kết hợp thành công của mình.",
+  "homepage.footer.desc": "Chương trình dạy kèm và trường học",
+  "homepage.footer.copyright": "2017 Thiết kế bởi Hamu Software & Design. Bảo lưu mọi quyền."
 }

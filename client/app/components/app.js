@@ -1,15 +1,18 @@
 import React from 'react'
 import {FormattedMessage} from 'react-intl'
-import MainNav from './mainnav.js'
+import MainNav from './Mainnav.js'
+import Footer from './Footer.js'
 
 /**
- * Primary component for Hamu-Education. Contains all components
+ * Container component for Hamu-Education.
  */
 export default class App extends React.Component {
   render() {
     return (
       <div>
         <MainNav />
+        {this.props.children}
+        <Footer />
       </div>
     )
   }

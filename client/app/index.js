@@ -1,15 +1,27 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
-import LocaleProvider from './localeApp/localeProvider.js'
-import StoreProvider from './store/storeProvider.js'
-import App from './components/app.js'
+import {createBrowserHistory} from 'history'
+
+import LocaleProvider from './localeApp/LocaleProvider.js'
+import Store from './store/Store.js'
+import Router from './Router.js'
 
 import style from './stylesheets/main.scss'
 
+const HISTORY = createBrowserHistory()
+const store = Store.initStore(HISTORY)
+
 ReactDOM.render(
-  <StoreProvider>
+  <Store.Provider store={store}>
     <LocaleProvider>
-      <App/>
+      <Router history={HISTORY}/>
     </LocaleProvider>
-  </StoreProvider>,
+  </Store.Provider>,
   document.getElementById('app'))
+
+// fades and removes loading after window has been loaded
+$(window).on('load',function() {
+  $('#main-loading-overlay').fadeOut(1000, function() {
+    $('#main-loading-overlay').remove()
+  })
+})

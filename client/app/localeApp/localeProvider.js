@@ -1,4 +1,6 @@
 import React from 'react'
+import {connect} from 'react-redux'
+import PropTypes from 'prop-types'
 import {IntlProvider, addLocaleData} from 'react-intl'
 import en from 'react-intl/locale-data/en'
 import vi from 'react-intl/locale-data/vi'
@@ -12,17 +14,34 @@ const localeData = {
   en: enData,
   vi: viData
 }
-// Get client side locale and get cooresponding locale data
-const locale = navigator.userLanguage || navigator.language
-const localeWithoutRegionCode = locale.toLowerCase().split(/[_-]+/)[0]
-const strings = localeData[localeWithoutRegionCode] || localeData[locale] || localeData.en
 
-export default class LocaleProvider extends React.Component {
+/**
+ * Locale provider for the app
+ */
+class LocaleProvider extends React.Component {
+  static propTypes = {
+    /** Client locale */
+    locale: PropTypes.string.isRequired
+  }
   render() {
+    const localeWithoutRegionCode = this.props.locale.toLowerCase().split(/[_-]+/)[0]
+    const strings = localeData[localeWithoutRegionCode] || localeData[this.props.locale] || localeData.en
     return (
-      <IntlProvider locale={locale} messages={strings}>
+      <IntlProvider locale={this.props.locale} messages={strings}>
         {this.props.children}
       </IntlProvider>
     )
   }
 }
+
+const mapStateToProps = (state) => {
+  return {
+    locale: state.locale
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(LocaleProvider)

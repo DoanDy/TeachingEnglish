@@ -1,3 +1,22 @@
 {
-  "navbar.courses": "Courses"
+  "navbar.courses": "Courses",
+  "navbar.courses.english": "English",
+  "navbar.aboutus": "About Us",
+  "navbar.aboutus.contact": "Contact Us",
+  "navbar.aboutus.staff": "Staff",
+  "homepage.jumbo-1.title": "Learn to Accomplish",
+  "homepage.jumbo-1.btn1": "Learn More",
+  "homepage.jumbo-1.btn2": "Join Us",
+  "homepage.jumbo-2.title": "Competitive Prices",
+  "homepage.jumbo-2.subtitle": "1.5 hours per day and 3 days per week.",
+  "homepage.jumbo-2.startingAt": "Starting at",
+  "homepage.jumbo-2.perMonth": "per Month",
+  "homepage.jumbo-2.private": "Private",
+  "homepage.jumbo-2.private.desc": "Learn what you want at the pace you want.",
+  "homepage.jumbo-2.group": "Group",
+  "homepage.jumbo-2.group.desc": "Learn amongst peers.",
+  "homepage.jumbo-3.title": "Success as defined by you",
+  "homepage.jumbo-3.desc": "Are you looking to travel abroad or are you learning to bulster your business? We'll help you set up a path and curriculum that will help you accompolish your success.",
+  "homepage.footer.desc": "Tutoring program and school",
+  "homepage.footer.copyright": "2017 Design by Hamu Software & Design. All rights reserved."
 }
