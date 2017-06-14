@@ -12,12 +12,11 @@ import English from './components/EnglishPage.js'
  */
 export default class Router extends React.Component {
   render() {
-    console.log(this.props.history)
     return (
       <ConnectedRouter history={this.props.history} >
         <App>
           <Route exact path="/" component={Home} />
-          <Route exact path="/courses/english" component={English} />
+          <Route path="/courses/english" component={English} />
         </App>
       </ConnectedRouter>
     )

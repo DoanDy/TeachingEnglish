@@ -12,3 +12,23 @@
   animation-duration: 0.2s;
   animation-timing-function: ease-in-out;
 }
+
+@keyframes wave {
+  0% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+  100% {
+    transform: rotate(-8deg);
+  }
+}
+
+.transitionWave {
+  transform: rotate(-8deg);
+  animation-name: wave;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}

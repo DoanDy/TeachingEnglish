@@ -1,10 +1,21 @@
 @import './components/_mainnav.scss';
 @import './components/_footer.scss';
 @import './components/_homepage.scss';
+@import './components/_englishpage.scss';
 @import './util/variables.scss';
+
+.lg-icon {
+  margin-top: -5vw;
+  margin-bottom: 10vw;
+  width: 30vw;
+  height: 30vw;
+  font-size: 30vw;
+}
 
 body {
   background-color: $color-tan;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 *:not(.material-icons) {
@@ -18,6 +29,19 @@ h5.selectable {
   user-select: text;
   * {
     user-select: text;
+  }
+}
+
+.overlay-container {
+  position: relative;
+  .overlay {
+    display: block;
+    position: absolute;
+    margin:auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 }
 
@@ -61,7 +85,11 @@ h5.selectable {
 .line-height-40 {
   line-height: 40px;
 }
-
+.horizontal-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .vertical-center {
   display: flex !important;
   align-items: center;
@@ -90,6 +118,9 @@ h5.selectable {
 }
 .black {
   background: #000;
+}
+.brown {
+  background: $color-brown;
 }
 
 .text-grey {

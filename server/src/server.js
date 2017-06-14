@@ -21,7 +21,7 @@ app.use(express.static('../client/build'))
 routes(app);
 
 // NEW When route is not specified in routes serve front end package
-app.get('*', function(req,res) {
+app.get('/', function(req,res) {
   res.sendFile(path.join(__dirname, '../../client/build', 'index.html'))
 })
 

@@ -25,11 +25,11 @@ export default class Footer extends React.Component {
               <object id="logo" className="pull-left" type="image/svg+xml" data="./svg/logo.svg">
               </object>
               <h4 className="text-capitalize">Hamu Learning</h4>
-              <p className="font-size-14 text-grey"><FormattedMessage id="homepage.footer.desc" /></p>
+              <p className="font-size-14 text-grey"><FormattedMessage id="footer.desc" /></p>
             </Col>
           </Row>
           <Row id="footer-footer" className="text-center">
-            <span className="text-center text-grey"><FormattedMessage id="homepage.footer.copyright" /></span>
+            <span className="text-center text-grey"><FormattedMessage id="footer.copyright" /></span>
           </Row>
         </div>
       </Jumbotron>

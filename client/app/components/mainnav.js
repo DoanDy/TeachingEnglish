@@ -18,13 +18,13 @@ class MainNav extends React.Component {
         <Navbar.Header>
           <Navbar.Brand>
             <a onClick={ e => this.props.push("/") }>
-              <object id="logo" className="pull-left" type="image/svg+xml" data="./svg/logo.svg">
+              <object id="logo" className="pull-left" type="image/svg+xml" data="/svg/logo.svg">
               </object>
               <h4 className="navbar-text pull-left animated bounceIn">Hamu Learning</h4>
             </a>
           </Navbar.Brand>
           <Navbar.Toggle className="z-depth-1">
-            <object id="toggle-logo" type="image/svg+xml" data="./svg/paw-no-animate.svg">
+            <object id="toggle-logo" type="image/svg+xml" data="/svg/paw-no-animate.svg">
             </object>
           </Navbar.Toggle>
         </Navbar.Header>

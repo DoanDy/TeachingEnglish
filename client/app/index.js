@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
-import {createBrowserHistory} from 'history'
+import {createHashHistory} from 'history'
 
 import LocaleProvider from './localeApp/LocaleProvider.js'
 import Store from './store/Store.js'
@@ -8,7 +8,7 @@ import Router from './Router.js'
 
 import style from './stylesheets/main.scss'
 
-const HISTORY = createBrowserHistory()
+const HISTORY = createHashHistory()
 const store = Store.initStore(HISTORY)
 
 ReactDOM.render(

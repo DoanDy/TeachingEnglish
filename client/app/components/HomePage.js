@@ -25,7 +25,7 @@ export default class HomePage extends React.Component {
               <h1 className="tlt text-white text-bold text-capitalize smooth-text">
                 <LocalizedTextillate inAnimation={{ effect: 'fadeInLeft', sync: true }} id={'homepage.jumbo-1.title'} />
               </h1>
-              <ButtonToolbar>
+              <ButtonToolbar data-aos="fade-left">
                 <Button className="transparent" bsSize="lg"><FormattedMessage id='homepage.jumbo-1.btn1' /></Button>
                 <Button className="transparent" bsSize="lg"><FormattedMessage id='homepage.jumbo-1.btn2' /></Button>
               </ButtonToolbar>
@@ -46,9 +46,9 @@ export default class HomePage extends React.Component {
               </object>
             </div>
             <div className="container">
-              <h1 className="text-white"><FormattedMessage id="homepage.jumbo-2.title"/></h1>
-              <p className="text-white"><FormattedMessage id="homepage.jumbo-2.subtitle"/></p>
-              <div className="row">
+              <h1 className="text-white" data-aos="fade-right"><FormattedMessage id="homepage.jumbo-2.title"/></h1>
+              <p className="text-white" data-aos="fade-right"><FormattedMessage id="homepage.jumbo-2.subtitle"/></p>
+              <div className="row" data-aos="fade-left">
                 <div className="col-xs-6 text-center">
                   <div className="circle-md" style={COIN_STYLE}>
                     <div className="circle-container text-center z-depth-1">
@@ -80,9 +80,9 @@ export default class HomePage extends React.Component {
               </object>
             </div>
             <div className="container">
-              <object id="goal" type="image/svg+xml" data="./svg/goal.svg">
+              <object id="goal" type="image/svg+xml" data="./svg/goal.svg" data-aos="fade-left">
               </object>
-              <h1><FormattedMessage id="homepage.jumbo-3.title"/></h1>
+              <h1 data-aos="fade-right"><FormattedMessage id="homepage.jumbo-3.title"/></h1>
               <p><FormattedMessage id="homepage.jumbo-3.desc" /></p>
             </div>
           </Jumbotron>

@@ -1,5 +1,6 @@
 import { createStore, applyMiddleware } from 'redux'
 import {routerReducer, routerMiddleware} from 'react-router-redux'
+import { createLogger } from 'redux-logger'
 
 import app from './reducers/index.js'
 import {changeLocale} from './actions/locale.js'
@@ -15,8 +16,8 @@ export default class Store {
   static initStore(history) {
     // Get client side locale
     const locale = navigator.userLanguage || navigator.language
-    const ROUTER_MIDDLEWARE = routerMiddleware(history)
-    const store = createStore(app, applyMiddleware(ROUTER_MIDDLEWARE))
+    const logger = createLogger({})
+    const store = createStore(app, applyMiddleware(routerMiddleware(history), logger))
     store.dispatch(changeLocale(locale))
     return store
   }

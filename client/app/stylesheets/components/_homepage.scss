@@ -7,7 +7,7 @@
 
 #homepage-jumbo-1 {
   padding: 0px;
-  min-height: 120vh;
+  min-height: 100vh;
   background-size: cover;
   background-position: 50% 15%;
   background-repeat: no-repeat;
@@ -49,8 +49,7 @@
 }
 
 #homepage-jumbo-2-container {
-  margin-top: -10vh;
-  #homepage-jumbo-2 {
+    #homepage-jumbo-2 {
     background-color: $color-brown;
     .circle-md {
       margin-left: auto;
