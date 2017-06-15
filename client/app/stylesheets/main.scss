@@ -2,7 +2,15 @@
 @import './components/_footer.scss';
 @import './components/_homepage.scss';
 @import './components/_englishpage.scss';
+@import './components/_staffpage.scss';
 @import './util/variables.scss';
+
+.badge {
+  padding: 6px 10px;
+}
+.badge.warning {
+  background-color: #f0ad4e;
+}
 
 .lg-icon {
   margin-top: -5vw;
@@ -48,15 +56,27 @@ h5.selectable {
 .inline-block {
   display: inline-block;
 }
-
+.flex {
+  display: flex;
+}
+.flex-row {
+  margin-bottom: 10px;
+}
+.flex-align-center {
+  align-items: center;
+}
+.table {
+  display: table;
+}
+.table-cell {
+  display: table-cell;
+}
 .badge-circle {
   margin-right: 10px;
-  margin-bottom: 10px;
   border-radius: 100%;
   background-color: #292c2f;
   height: 40px;
-  width: 40px;
-  display: inline-block;
+  flex: 0 0 40px;
   line-height: 40px;
   text-align: center;
   transition: transform 0.3s ease-in-out;
@@ -71,8 +91,8 @@ h5.selectable {
 .font-size-14 {
   font-size: 14px !important;
 }
-.font-size-20 {
-  font-size: 20;
+.font-size-16 {
+  font-size: 16px;
 }
 
 .width-100 {
@@ -82,17 +102,26 @@ h5.selectable {
   min-height: 100%;
 }
 
+.line-height-34 {
+  line-height: 34px;
+}
 .line-height-40 {
   line-height: 40px;
 }
+.margin-bottom-40 {
+  margin-bottom: 40px;
+}
+
 .horizontal-center {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 .vertical-center {
-  display: flex !important;
   align-items: center;
+}
+.vertical-align-middle {
+  vertical-align: middle;
 }
 
 .material-icons {
@@ -122,7 +151,12 @@ h5.selectable {
 .brown {
   background: $color-brown;
 }
-
+.tan {
+  background: $color-tan;
+}
+.text-dark-grey {
+  color: #4e4e4e;
+}
 .text-grey {
   color: #9e9e9e;
 }

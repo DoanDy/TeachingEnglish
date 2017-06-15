@@ -20,7 +20,7 @@ export default class HomePage extends React.Component {
     return (
       <div id="homepage-body">
         <Jumbotron id="homepage-jumbo-1" style={JUMBOTRON_1_STYLE}>
-          <div className="container height-100 vertical-center">
+          <div className="container height-100 flex vertical-center">
             <div className="hidden-xs">
               <h1 className="tlt text-white text-bold text-capitalize smooth-text">
                 <LocalizedTextillate inAnimation={{ effect: 'fadeInLeft', sync: true }} id={'homepage.jumbo-1.title'} />

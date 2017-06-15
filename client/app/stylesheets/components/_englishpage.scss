@@ -2,7 +2,7 @@
 @import '../util/transitions.scss';
 
 #more-button-group {
-  width: 70%;
+  min-width: 70%;
   margin-top: 15px;
   margin-bottom: 15px;
   .btn {
@@ -14,14 +14,16 @@
   min-height: 100vh;
   background-color: #FFF;
   #usa {
-    height: 80vh;
+    max-height: 80vh;
+    max-width: 80vw;
     margin-left: auto;
     margin-right: auto;
     display: block;
   }
   #paw {
     @extend .transitionWave;
-    height: 30vh;
+    max-height: 30vh;
+    max-width: 20vw;
     transition: transform 0.3s ease-in-out;
   }
 }
@@ -32,14 +34,16 @@
     margin-top: 25px;
     margin-bottom: 25px;
     #globe {
-      height: 80vh;
+      max-height: 80vh;
+      max-width: 80vw;
       margin-left: auto;
       margin-right: auto;
       display: block;
     }
     #overlay-paw {
       @extend .transitionWave;
-      height: 30vh;
+      max-height: 30vh;
+      max-width: 20vw;
       transition: transform 0.3s ease-in-out;
     }
   }

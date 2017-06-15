@@ -33,7 +33,7 @@ class MainNav extends React.Component {
             <NavDropdown id="aboutus" title={<FormattedMessage
                     id={'navbar.aboutus'}/>} noCaret>
               <MenuItem><i className="material-icons">phone</i> <FormattedMessage id={'navbar.aboutus.contact'}/></MenuItem>
-              <MenuItem><i className="material-icons">supervisor_account</i> <FormattedMessage id={'navbar.aboutus.staff'}/></MenuItem>
+              <MenuItem onClick={ e => this.props.push("/staff") }><i className="material-icons">supervisor_account</i> <FormattedMessage id={'navbar.aboutus.staff'}/></MenuItem>
             </NavDropdown>
             <NavDropdown id="courses" title={<FormattedMessage
                     id={'navbar.courses'}/>} noCaret>

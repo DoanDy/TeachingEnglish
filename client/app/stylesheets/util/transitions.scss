@@ -17,8 +17,14 @@
   0% {
     transform: rotate(-8deg);
   }
+  10% {
+    transform: rotate(-8deg);
+  }
   50% {
     transform: rotate(8deg);
+  }
+  90% {
+    transform: rotate(-8deg);
   }
   100% {
     transform: rotate(-8deg);

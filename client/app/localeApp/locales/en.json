@@ -21,10 +21,17 @@
   "footer.copyright": "2017 Design by Hamu Software & Design. All rights reserved.",
   "english.jumbo-1.title": "Authentic American English",
   "english.jumbo-1.subtitle": "Learn from a native. Speak like a native.",
-  "english.jumbo-1.desc": "Our teachers are native English speakers with college level education.",
+  "english.jumbo-1.desc": "Our teachers are native English speakers with college level educations.",
   "english.more-button-group.join": "Join a Class",
   "english.more-button-group.pricing": "Pricing",
   "english.more-button-group.staff": "Our Teachers",
   "english.jumbo-2.title": "A Multilingual Environment",
-  "english.jumbo-2.desc": "Learn English from both someone who is a native speaker and someone who is well versed in the language you speak."
+  "english.jumbo-2.desc": "Learn English from both someone who is a native speaker and someone who is well versed in the language you speak.",
+  "staff.jumbo-1.title": "Meet Our Staff",
+  "role.teacher": "Teacher",
+  "role.translator": "Translator",
+  "staff.kai-matsuda.langs": "English, Japanese",
+  "staff.kai-matsuda.edu": "NYU, UMass Amherst",
+  "staff.kevin-doan.langs": "English, Vietnamese",
+  "staff.kevin-doan.edu": "UMass Amherst"
 }
