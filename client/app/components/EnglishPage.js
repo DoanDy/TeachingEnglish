@@ -43,7 +43,7 @@ export default class EnglishPage extends React.Component {
               <object id="overlay-paw" className="overlay" type="image/svg+xml" data="./svg/paw-no-animate.svg" data-aos="fade-left">
               </object>
             </div>
-            <p className="text-light-grey"><FormattedMessage id="english.jumbo-2.desc"/></p>
+            <p className="text-light-grey text-bold"><FormattedMessage id="english.jumbo-2.desc"/></p>
           </div>
         </Jumbotron>
       </div>

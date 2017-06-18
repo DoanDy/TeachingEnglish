@@ -1,0 +1,14 @@
+@import '../util/variables.scss';
+
+#contact-jumbo-1 {
+  min-height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .height-100 {
+    height: calc(90vh - 96px);
+  }
+}
+
+#contact {
+  background: darken($color-brown, 20%)
+}
