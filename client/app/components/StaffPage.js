@@ -3,6 +3,9 @@ import {Jumbotron, Row, Col, Thumbnail, Badge} from 'react-bootstrap'
 import {FormattedMessage} from 'react-intl'
 
 export default class StaffPage extends React.Component {
+  componentDidMount() {
+    document.title = "Hamu Learning - Staff"
+  }
   render() {
     return (
       <Jumbotron id="staff-jumbo-1" className="white">

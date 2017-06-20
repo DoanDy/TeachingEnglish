@@ -18,6 +18,9 @@ const COIN_STYLE = {
  * Home page component for the app
  */
 export default class HomePage extends React.Component {
+  componentDidMount() {
+    document.title = "Hamu Learning - Beta!"
+  }
   render() {
     return (
       <div id="homepage-body">

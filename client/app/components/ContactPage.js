@@ -11,6 +11,9 @@ const STORE_FRONT_STYLE = {
 }
 
 export default class ContactPage extends React.Component {
+  componentDidMount() {
+    document.title = "Hamu Learning - Contact"
+  }
   render() {
     return(
       <div>

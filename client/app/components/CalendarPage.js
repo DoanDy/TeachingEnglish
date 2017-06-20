@@ -6,6 +6,9 @@ import {FormattedMessage} from 'react-intl'
 import FormatMessage from './FormatMessage.js'
 
 export default class CalendarPage extends React.Component {
+  componentDidMount() {
+    document.title = "Hamu Learning - Schedule"
+  }
   render() {
     return (
       <Jumbotron id="calendar.jumbo-1" className="relative">

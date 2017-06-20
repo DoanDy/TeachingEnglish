@@ -11,6 +11,9 @@ const JUMBOTRON_1_STYLE = {
 }
 
 export default class EnglishPage extends React.Component {
+  componentDidMount() {
+    document.title = "Hamu Learning - English"
+  }
   render() {
     return (
       <div>
