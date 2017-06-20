@@ -13,7 +13,7 @@ export default class StaffPage extends React.Component {
           <h1 className="text-center margin-bottom-40" data-aos="fade-right"><FormattedMessage id="staff.jumbo-1.title" /></h1>
           <Row data-aos="fade-left">
             <Col xs={6}>
-              <Thumbnail src="/img/kai_matsuda.jpg">
+              <Thumbnail src="./img/kai_matsuda.jpg">
                 <h3><i className="material-icons">pets</i> <span className="vertical-align-middle inline-block">Kai Matsuda</span></h3>
                 <Badge className="brown"><FormattedMessage id="role.teacher" /></Badge>
                 <hr />
@@ -22,7 +22,7 @@ export default class StaffPage extends React.Component {
               </Thumbnail>
             </Col>
             <Col xs={6}>
-              <Thumbnail src="/img/kevin_doan.jpg">
+              <Thumbnail src="./img/kevin_doan.jpg">
                 <h3><i className="material-icons">pets</i> <span className="vertical-align-middle inline-block">Kevin Doan</span></h3>
                 <Badge className="warning"><FormattedMessage id="role.translator" /></Badge>
                 <hr />

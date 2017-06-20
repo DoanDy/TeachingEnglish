@@ -6,11 +6,13 @@ import {LinkContainer} from 'react-router-bootstrap'
 
 
 const JUMBOTRON_1_STYLE = {
-  backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url(/img/gallery1.jpg)'
+  backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url(./img/gallery1.jpg)'
 }
+console.log(JUMBOTRON_1_STYLE)
+
 
 const COIN_STYLE = {
-  backgroundImage: 'url(/svg/hamu-coin.svg)',
+  backgroundImage: 'url(./svg/hamu-coin.svg)',
   backgroundSize: "cover"
 }
 

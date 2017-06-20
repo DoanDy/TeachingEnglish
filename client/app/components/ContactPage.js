@@ -3,11 +3,11 @@ import {Jumbotron, Row, Col, Panel} from 'react-bootstrap'
 import {FormattedMessage} from 'react-intl'
 
 const JUMBO_1_STYLE = {
-  backgroundImage: 'url("/gif/class.gif")'
+  backgroundImage: 'url("./gif/class.gif")'
 }
 
 const STORE_FRONT_STYLE = {
-  backgroundImage: 'url("/img/store_front.jpg")'
+  backgroundImage: 'url("./img/store_front.jpg")'
 }
 
 export default class ContactPage extends React.Component {

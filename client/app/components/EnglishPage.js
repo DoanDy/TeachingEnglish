@@ -5,7 +5,7 @@ import {FormattedMessage} from 'react-intl'
 import {LinkContainer} from 'react-router-bootstrap'
 
 const JUMBOTRON_1_STYLE = {
-  backgroundImage: 'url(/gif/teaching.gif)',
+  backgroundImage: 'url(./gif/teaching.gif)',
   backgroundSize: 'cover',
   filter: 'grayscale(50%)'
 }
