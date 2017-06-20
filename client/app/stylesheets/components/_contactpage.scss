@@ -1,7 +1,8 @@
 @import '../util/variables.scss';
 
 #contact-jumbo-1 {
-  min-height: 90vh;
+  min-height: 475px;
+  height: 90vh;
   background-size: cover;
   background-repeat: no-repeat;
   .height-100 {
@@ -9,6 +10,6 @@
   }
 }
 
-#contact {
+#contact-panel {
   background: darken($color-brown, 20%)
 }

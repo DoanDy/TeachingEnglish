@@ -1,0 +1,131 @@
+[
+  {
+    "id": 1,
+    "name": {
+      "en": "School Closed",
+      "vi": "Trường Học Đã Đóng Cửa"
+    },
+    "noPopover": true,
+    "className": "danger",
+    "dates": [
+      {
+        "dayOfWeek": "sun",
+        "startTime": 13,
+        "duration": 9
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": {
+      "en": "Kids A",
+      "vi": "Trẻ Em A"
+    },
+    "enrollment": 7,
+    "ageRange": "6-7",
+    "className": "tan",
+    "dates": [
+      {
+        "dayOfWeek": "tue",
+        "startTime": 18,
+        "duration": 1.5
+      },
+      {
+        "dayOfWeek": "wed",
+        "startTime": 18,
+        "duration": 1.5
+      },
+      {
+        "dayOfWeek": "thu",
+        "startTime": 18,
+        "duration": 1.5
+      },
+      {
+        "dayOfWeek": "fri",
+        "startTime": 18,
+        "duration": 1.5
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": {
+      "en": "Kids B",
+      "vi": "Trẻ Em B"
+    },
+    "enrollment": 4,
+    "ageRange": "5-6",
+    "className": "brown",
+    "dates": [
+      {
+        "dayOfWeek": "mon",
+        "startTime": 18,
+        "duration": 1.5
+      },
+      {
+        "dayOfWeek": "wed",
+        "startTime": 19.5,
+        "duration": 1.5
+      },
+      {
+        "dayOfWeek": "sat",
+        "startTime": 18.5,
+        "duration": 1.5
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": {
+      "en": "Adults A",
+      "vi": "Người Lớn A"
+    },
+    "enrollment": 3,
+    "ageRange": "adults",
+    "className": "black",
+    "dates": [
+      {
+        "dayOfWeek": "tue",
+        "startTime": 19.5,
+        "duration": 1.5
+      },
+      {
+        "dayOfWeek": "thu",
+        "startTime": 19.5,
+        "duration": 1.5
+      },
+      {
+        "dayOfWeek": "fri",
+        "startTime": 19.5,
+        "duration": 1.5
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": {
+      "en": "Adults B",
+      "vi": "Người Lớn B"
+    },
+    "enrollment": 1,
+    "ageRange": "adults",
+    "className": "tan",
+    "dates": [
+      {
+        "dayOfWeek": "tue",
+        "startTime": 14,
+        "duration": 1.5
+      },
+      {
+        "dayOfWeek": "thu",
+        "startTime": 14,
+        "duration": 1.5
+      },
+      {
+        "dayOfWeek": "fri",
+        "startTime": 14,
+        "duration": 1.5
+      }
+    ]
+  }
+]

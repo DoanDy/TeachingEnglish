@@ -2,6 +2,8 @@ import React from 'react'
 import LocalizedTextillate from './LocalizedTextillate.js'
 import {Jumbotron, ButtonToolbar, Button, Panel} from 'react-bootstrap'
 import {FormattedMessage} from 'react-intl'
+import {LinkContainer} from 'react-router-bootstrap'
+
 
 const JUMBOTRON_1_STYLE = {
   backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url(/img/gallery1.jpg)'
@@ -26,8 +28,12 @@ export default class HomePage extends React.Component {
                 <LocalizedTextillate inAnimation={{ effect: 'fadeInLeft', sync: true }} id={'homepage.jumbo-1.title'} />
               </h1>
               <ButtonToolbar data-aos="fade-left">
-                <Button className="transparent" bsSize="lg"><FormattedMessage id='homepage.jumbo-1.btn1' /></Button>
-                <Button className="transparent" bsSize="lg"><FormattedMessage id='homepage.jumbo-1.btn2' /></Button>
+                <LinkContainer to="/calendar">
+                  <Button className="transparent" bsSize="lg"><FormattedMessage id='homepage.jumbo-1.btn1' /></Button>
+                </LinkContainer>
+                <LinkContainer to="/contact">
+                  <Button className="transparent" bsSize="lg"><FormattedMessage id='homepage.jumbo-1.btn2' /></Button>
+                </LinkContainer>
               </ButtonToolbar>
             </div>
             <div id="jumbo-1-content-xs" className="visible-xs width-100">

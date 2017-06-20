@@ -45,7 +45,7 @@ export default class Footer extends React.Component {
               </div>
               <div ref="phone_flex" className="flex flex-align-center flex-row">
                 <span className="badge-circle"><i className="material-icons">phone</i></span>
-                <h5 className="selectable font-size-20 spaced">+1 413 369 8043</h5>
+                <h5 className="selectable font-size-20 spaced">+1 413 923 8732</h5>
               </div>
               <div ref="email_flex" className="flex flex-align-center flex-row">
                 <span className="badge-circle"><i className="material-icons">email</i></span>

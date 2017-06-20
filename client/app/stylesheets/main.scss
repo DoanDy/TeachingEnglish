@@ -4,8 +4,12 @@
 @import './components/_englishpage.scss';
 @import './components/_staffpage.scss';
 @import './components/_contactpage.scss';
+@import './components/_calendarpage.scss';
 @import './util/variables.scss';
 
+.text-decoration-none {
+  text-decoration: none !important;
+}
 .break-word {
   overflow-wrap: break-word;
 }
@@ -27,11 +31,28 @@
   border: none;
 }
 
+.danger {
+  color: #a94442;
+  background-color: #f2dede;
+  transition: opacity 0.7s ease-in-out;
+  &.semi-transparent {
+    opacity: 0.7;
+    &.hover:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
 .speech {
   text-align: center;
   position: relative;
   padding: 30px;
-  margin: 1em 0 3em;
   color: #000;
   background: darken($color-tan, 10%);
   border-radius: 10px;
@@ -113,7 +134,9 @@ h5.selectable {
     right: 0;
   }
 }
-
+.block {
+  display: block;
+}
 .inline-block {
   display: inline-block;
 }
@@ -214,13 +237,36 @@ h5.selectable {
   background: #FFF;
 }
 .black {
+  color: #FFF;
   background: #000;
+  transition: opacity 0.7s ease-in-out;
+  &.hover:hover {
+    opacity: 1;
+  }
+  &.semi-transparent {
+    opacity: 0.7;
+  }
 }
 .brown {
+  color: #FFF;
   background: $color-brown;
+  transition: opacity 0.7s ease-in-out;
+  &.hover:hover {
+    opacity: 1;
+  }
+  &.semi-transparent {
+    opacity: 0.7;
+  }
 }
 .tan {
   background: $color-tan;
+  transition: opacity 0.7s ease-in-out;
+  &.hover:hover {
+    opacity: 1;
+  }
+  &.semi-transparent {
+    opacity: 0.7;
+  }
 }
 .tan-darken {
   background: darken($color-tan, 10%);
@@ -239,6 +285,9 @@ h5.selectable {
 }
 .text-white {
   color: #FFF;
+}
+.text-tan {
+  color: $color-tan;
 }
 .text-brown {
   color: $color-brown;

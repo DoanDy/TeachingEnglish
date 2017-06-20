@@ -1,0 +1,66 @@
+$hour-height: 37px * 2;
+
+@mixin hour-long($hours) {
+  height: $hours * $hour-height - 3;
+}
+
+@mixin off-set-hour($hours) {
+  top: $hours * $hour-height !important;
+}
+
+.duration-9 {
+  @include hour-long(9);
+}
+.duration-1-5 {
+  @include hour-long(1.5);
+}
+.off-set-half-an-hour {
+  @include off-set-hour(0.5);
+}
+
+#calendar {
+  table-layout: fixed;
+  tr {
+    height: $hour-height;
+  }
+  td {
+    border-left: 1px solid #ddd;
+  }
+  .event {
+    cursor: pointer;
+    background-color: inherit;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    & .event-content {
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+      border-radius: 10px;
+    }
+  }
+}
+
+$sidebar-width: 200px;
+
+.sidebar {
+    width: 0px; /* 0 width - change this with JavaScript */
+    transition: 0.5s width; /* 0.5 second transition effect to slide in the sidenav */
+    &.show-sidebar {
+      width: $sidebar-width;
+    }
+    .sidebar-content {
+      padding: 10px;
+      p {
+        font-size: 14px;
+      }
+    }
+}
+.sidebar-main-container {
+  justify-content: center;
+  width: 100%;
+  transition: margin .5s;
+  &.show-sidebar {
+    margin-left: -$sidebar-width;
+  }
+}

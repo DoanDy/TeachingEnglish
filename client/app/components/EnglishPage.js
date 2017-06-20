@@ -1,6 +1,8 @@
 import React from 'react'
+import {connect} from 'react-redux'
 import {Jumbotron, Row, Col, ButtonToolbar, ButtonGroup, Button} from 'react-bootstrap'
 import {FormattedMessage} from 'react-intl'
+import {LinkContainer} from 'react-router-bootstrap'
 
 const JUMBOTRON_1_STYLE = {
   backgroundImage: 'url(/gif/teaching.gif)',
@@ -23,9 +25,15 @@ export default class EnglishPage extends React.Component {
             </div>
             <h2 className="text-center"><FormattedMessage id="english.jumbo-1.subtitle"/></h2>
             <ButtonGroup id="more-button-group" justified className="horizontal-center">
-              <Button href="#" bsStyle="warning"><FormattedMessage id="english.more-button-group.join"/></Button>
-              <Button href="#" bsStyle="warning"><FormattedMessage id="english.more-button-group.pricing"/></Button>
-              <Button href="#" bsStyle="warning"><FormattedMessage id="english.more-button-group.staff"/></Button>
+              <LinkContainer to="/contact">
+                <Button href="#" bsStyle="warning"><FormattedMessage id="english.more-button-group.join"/></Button>
+              </LinkContainer>
+              <LinkContainer to="/">
+                <Button href="#" bsStyle="warning"><FormattedMessage id="english.more-button-group.pricing"/></Button>
+              </LinkContainer>
+              <LinkContainer to="/staff">
+                <Button href="#" bsStyle="warning"><FormattedMessage id="english.more-button-group.staff"/></Button>
+              </LinkContainer>
             </ButtonGroup>
             <p className="text-center"><FormattedMessage id="english.jumbo-1.desc"/></p>
           </div>
